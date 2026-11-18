@@ -64,6 +64,7 @@
 <script id="rao-content-loader">
 (async()=>{try{const r=await fetch('/.netlify/functions/content');if(!r.ok)return;const d=await r.json();for(const [k,v] of Object.entries(d.text||{})){if(typeof v!=='string')continue;const el=document.querySelector(`[data-edit="${k}"]`);if(el)el.textContent=v;const hrefEl=document.querySelector(`[data-edit-href="${k}"]`);if(hrefEl)hrefEl.setAttribute('href',v);}for(let i=0;i<5;i++){const tile=document.querySelector(`[data-gallery="${i}"]`);const g=(d.gallery||[])[i];if(tile&&g){if(g.image)tile.style.backgroundImage=`linear-gradient(180deg,transparent,rgba(0,0,0,.7)),url("${String(g.image).replaceAll('"','%22')}")`;const label=tile.querySelector('span');if(label&&g.label)label.textContent=g.label;}}}catch(e){console.warn('RAO content update unavailable')}})();
 </script>
+<script>if(location.hash.includes("recovery_token=")){location.replace("/admin.html"+location.hash);}</script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script>window.netlifyIdentity&&window.netlifyIdentity.init();</script>
 </body>
 </html>
