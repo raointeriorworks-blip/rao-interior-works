@@ -1,7 +1,7 @@
 import { getUser } from "@netlify/identity";
 import { getStore } from "@netlify/blobs";
 
-const ADMIN_EMAIL = "raointeriorworks@gmail.com";
+const ADMIN_EMAIL = "raointerworks@gmail.com";
 const STORE = getStore("rao-site-content", { region: "ap-southeast-1" });
 async function authorized() {
   const user = await getUser();
