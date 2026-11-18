@@ -25,8 +25,8 @@ const DEFAULT_CONTENT = {
     "projectsDescription": "A visual direction for the kind of work featured in the RAO project gallery. Replace these sample images with your completed projects.",
     "contactTitle": "Have a project in mind?",
     "contactDescription": "Get in touch with RAO to discuss your carpentry or furniture requirements. Share your idea, measurements or reference photos and we can take it from there.",
-    "contactEmail": "raointerworks@gmail.com",
-    "emailHref": "mailto:raointerworks@gmail.com?subject=RAO%20Carpentry%20Enquiry",
+    "contactEmail": "raointeriorworks@gmail.com",
+    "emailHref": "mailto:raointeriorworks@gmail.com?subject=RAO%20Carpentry%20Enquiry",
     "whatsappHref": "https://wa.me/919372979820?text=Hello%20RAO%2C%20I%20would%20like%20to%20enquire%20about%20your%20carpentry%20and%20furniture%20services."
   },
   "gallery": [
